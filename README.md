@@ -24,15 +24,15 @@ Offline:
 3.1: In order to have the table of contents update when clicking a link to another page inside the  
 help file, add the following elements to the bottom of your html pages.  
 '''html  
-<script src="../external/jquery/jquery.js"></script>  
-<script src="../external/jquery.cookie.js"></script>  
-<script src="../external/help-viewer-utilities.js"></script>  
-<script>  
+\<script src="../external/jquery/jquery.js"\></script\>  
+\<script src="../external/jquery.cookie.js"\></script\>  
+\<script src="../external/help-viewer-utilities.js"\>\</script\>  
+\<script\>  
 	$("a").on('click', function () {  
 		writeLink(this.href);  
 		return true;  
 	});  
-</script>  
+\</script\>  
 '''  
 4: Build your table of contents by editing table-of-contents.js  
 4.1: Each entry in the table of contents contains the following key/value pairs, id, parent, and text.  
