@@ -23,10 +23,10 @@ Offline:
 3: Place your content files inside the content folder. Note, these files can contain sub folders.  
 3.1: In order to have the table of contents update when clicking a link to another page inside the  
 help file, add the following elements to the bottom of your html pages.  
-'''html  
-\<script src="../external/jquery/jquery.js"\></script\>  
-\<script src="../external/jquery.cookie.js"\></script\>  
-\<script src="../external/help-viewer-utilities.js"\>\</script\>  
+'''  
+\<script src="../external/jquery/jquery.js"\>  
+\<script src="../external/jquery.cookie.js"\>  
+\<script src="../external/help-viewer-utilities.js"\>   
 \<script\>  
 	$("a").on('click', function () {  
 		writeLink(this.href);  
