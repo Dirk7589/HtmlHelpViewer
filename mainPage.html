@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Help Viewer</title>
+    <link rel="stylesheet" href="css/help-viewer-style.css" />
+</head>
+<body>
+    <div class="split-pane fixed-left">
+        <div class="split-pane-component" id="left-component">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Table of Contents</a></li>
+                    <li><a href="#tabs-2">Search</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div id="jstree_div"></div>
+                </div>
+                <div id="tabs-2">
+                    <div class="searchBox">
+                        <form action="">
+                            <input type="text" name="q" id="tipue_search_input" autocomplete="on" required>
+                        </form>
+                    </div>
+                    <div id="tipue_search_content"></div>
+                </div>
+            </div>
+        </div>
+        <div class="split-pane-divider" id="my-divider"></div>
+        <div class="split-pane-component" id="right-component">
+            <iframe frameborder="0" id="content_pane"></iframe>
+        </div>
+    </div>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="external/jquery-ui.js"></script>
+    <script src="external/jquery.cookie.js"></script>
+    <script src="external/modernizr.custom.71742.js"></script>
+    <script src="external/tipuesearch_set.js"></script>
+    <script src="configuration/tipuesearch_content.js"></script>
+    <script src="external/tipuesearch.js"></script>
+    <script src="external/split-pane.js"></script>
+    <script src="external/jstree.js"></script>
+    <script src="configuration/table-of-contents.js"></script>
+    <script src="external/help-viewer-script.js"></script>
+    <script src="external/help-viewer-utilities.js"></script>
+</body>
+</html>
